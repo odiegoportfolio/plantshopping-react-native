@@ -8,119 +8,112 @@ var PlantsService = (function (){
                     name: "plantName1",
                     price: 50.00,
                     description: "descriptionPlantName1",
-                    image:"./src/images/plant1.png"
+                    image:require("../images/plant1.jpg")
                 },
                 {
                     id: 2,
                     name: "plantName2",
                     price: 50.00,
                     description: "descriptionPlantName2",
-                    image:"./src/images/plant2.png"
+                    image: require("../images/plant2.jpg")
                 },
                 {
                     id: 3,
                     name: "plantName3",
                     price: 50.00,
                     description: "descriptionPlantName3",
-                    image:"./src/images/plant1.png"
+                    image: require("../images/plant3.jpg")
                 },
                 {
                     id: 4,
                     name: "plantName4",
                     price: 50.00,
                     description: "descriptionPlantName4",
-                    image:"./src/images/plant4.png"
+                    image:require("../images/plant4.jpg")
                 },
                 {
                     id: 5,
                     name: "plantName5",
                     price: 50.00,
                     description: "descriptionPlantName5",
-                    image:"./src/images/plant5.png"
-                },
-                {
-                    id: 55,
-                    name: "plantName55",
-                    price: 50.00,
-                    description: "descriptionPlantName55",
-                    image:"./src/images/plant55.png"
+                    image:require("../images/plant5.jpg")
                 },
                 {
                     id: 6,
                     name: "plantName6",
                     price: 50.00,
                     description: "descriptionPlantName6",
-                    image:"./src/images/plant6.png"
+                    image:require("../images/plant6.jpg")
                 },
                 {
                     id: 7,
                     name: "plantName7",
                     price: 50.00,
                     description: "descriptionPlantName7",
-                    image:"./src/images/plant7.png"
+                    image:require("../images/plant7.jpg")
                 },
                 {
                     id: 8,
                     name: "plantName8",
                     price: 50.00,
                     description: "descriptionPlantName8",
-                    image:"./src/images/plant8.png"
+                    image:require("../images/plant8.jpg")
                 },
                 {
                     id: 9,
                     name: "plantName9",
                     price: 50.00,
                     description: "descriptionPlantName9",
-                    image:"./src/images/plant9.png"
+                    image:require("../images/plant9.jpg")
                 },
                 {
                     id: 10,
                     name: "plantName10",
                     price: 50.00,
                     description: "descriptionPlantName10",
-                    image:"./src/images/plant10.png"
+                    image:require("../images/plant10.jpg")
                 },
                 {
                     id: 11,
                     name: "plantName11",
                     price: 50.00,
                     description: "descriptionPlantName11",
-                    image:"./src/images/plant11.png"
+                    image:require("../images/plant11.jpg")
                 },
                 {
                     id: 12,
                     name: "plantName12",
                     price: 50.00,
                     description: "descriptionPlantName12",
-                    image:"./src/images/plant12.png"
+                    image:require("../images/plant12.jpg")
                 },
                 {
                     id: 13,
                     name: "plantName13",
                     price: 50.00,
                     description: "descriptionPlantName13",
-                    image:"./src/images/plant13.png"
+                    image:require("../images/plant13.jpg")
                 },
                 {
                     id: 14,
                     name: "plantName14",
                     price: 50.00,
                     description: "descriptionPlantName14",
-                    image:"./src/images/plant14.png"
+                    image:require("../images/plant14.jpg")
                 },
                 {
                     id: 15,
                     name: "plantName15",
                     price: 50.00,
                     description: "descriptionPlantName15",
-                    image:"./src/images/plant15.png"
+                    image:require("../images/plant15.jpg")
                 },
                 {
                     id: 16,
                     name: "plantName16",
                     price: 50.00,
                     description: "descriptionPlantName16",
-                    image:"./src/images/plant16.png"
+                    image:require("../images/plant16.jpg")
                 }
         
             ]

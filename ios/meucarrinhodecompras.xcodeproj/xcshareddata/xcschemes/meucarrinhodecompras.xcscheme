@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "meucarrinhodecompras.app"
-               BlueprintName = "meucarrinhodecompras"
-               ReferencedContainer = "container:meucarrinhodecompras.xcodeproj">
+               BuildableName = "plantshopping.app"
+               BlueprintName = "plantshopping"
+               ReferencedContainer = "container:plantshopping.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "meucarrinhodecomprasTests.xctest"
-               BlueprintName = "meucarrinhodecomprasTests"
-               ReferencedContainer = "container:meucarrinhodecompras.xcodeproj">
+               BuildableName = "plantshoppingTests.xctest"
+               BlueprintName = "plantshoppingTests"
+               ReferencedContainer = "container:plantshopping.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "meucarrinhodecompras.app"
-            BlueprintName = "meucarrinhodecompras"
-            ReferencedContainer = "container:meucarrinhodecompras.xcodeproj">
+            BuildableName = "plantshopping.app"
+            BlueprintName = "plantshopping"
+            ReferencedContainer = "container:plantshopping.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "meucarrinhodecompras.app"
-            BlueprintName = "meucarrinhodecompras"
-            ReferencedContainer = "container:meucarrinhodecompras.xcodeproj">
+            BuildableName = "plantshopping.app"
+            BlueprintName = "plantshopping"
+            ReferencedContainer = "container:plantshopping.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "meucarrinhodecompras-tvOS.app"
-               BlueprintName = "meucarrinhodecompras-tvOS"
-               ReferencedContainer = "container:meucarrinhodecompras.xcodeproj">
+               BuildableName = "plantshopping-tvOS.app"
+               BlueprintName = "plantshopping-tvOS"
+               ReferencedContainer = "container:plantshopping.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "meucarrinhodecompras-tvOSTests.xctest"
-               BlueprintName = "meucarrinhodecompras-tvOSTests"
-               ReferencedContainer = "container:meucarrinhodecompras.xcodeproj">
+               BuildableName = "plantshopping-tvOSTests.xctest"
+               BlueprintName = "plantshopping-tvOSTests"
+               ReferencedContainer = "container:plantshopping.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "meucarrinhodecompras-tvOS.app"
-            BlueprintName = "meucarrinhodecompras-tvOS"
-            ReferencedContainer = "container:meucarrinhodecompras.xcodeproj">
+            BuildableName = "plantshopping-tvOS.app"
+            BlueprintName = "plantshopping-tvOS"
+            ReferencedContainer = "container:plantshopping.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "meucarrinhodecompras-tvOS.app"
-            BlueprintName = "meucarrinhodecompras-tvOS"
-            ReferencedContainer = "container:meucarrinhodecompras.xcodeproj">
+            BuildableName = "plantshopping-tvOS.app"
+            BlueprintName = "plantshopping-tvOS"
+            ReferencedContainer = "container:plantshopping.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

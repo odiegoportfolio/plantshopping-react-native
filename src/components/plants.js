@@ -8,7 +8,7 @@ export default class Plants extends Component {
     renderItem =({item})=>{
        return (
             <View style={styles.itemContainer}>
-                <Image source={require('../images/plant.jpg')} style={styles.images}/>
+                <Image style={styles.images} source={item.image}/>
                 <Text>{item.name}</Text>
             </View>
           )
