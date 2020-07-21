@@ -82,7 +82,7 @@ var PlantsService = (function (){
                 },
                 {
                     id: 12,
-                    name: "plantName12",
+                    name: "Camedórea",
                     price: 50.00,
                     description: "descriptionPlantName12",
                     image:require("../images/plant12.jpg")

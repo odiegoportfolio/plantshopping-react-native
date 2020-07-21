@@ -52,8 +52,8 @@ const styles = StyleSheet.create({
       alignItems: 'center'
     },
     itemContainer:{
-      width: '48%',
-      height: 350,
+      width:  250,
+      height: 320,
       margin: 5,
       backgroundColor: "white",
       borderRadius:10,
@@ -72,8 +72,8 @@ const styles = StyleSheet.create({
       padding: 0
     },
     images:{
-      width: 270,
-      height: 270,
+      width: 250,
+      height: 250,
     },
     itemNameContainer:{
       marginTop: 5,
