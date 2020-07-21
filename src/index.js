@@ -1,5 +1,5 @@
 import React from "react";
-import Routes from './routes';
-const App = () => <Routes />;
+import HomeScreen from "./pages/home";
+const App = () => <HomeScreen/>;
 
 export default App;
