@@ -1,35 +1,44 @@
 import React,{Component} from "react";
-import { View, Text, StyleSheet, FlatList, Image } from "react-native";
+import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity } from "react-native";
 import PlantsService from "../services/plants.service.js";
 import NumberFormat from 'react-number-format';
+import { NavigationContext } from '@react-navigation/native';
 
 export default class Plants extends Component {
-
+    static contextType = NavigationContext;
     renderItem =({item})=>{
+      const navigation = this.context;
        return (
-            <View style={styles.itemContainer}>
-              <View style={styles.imagesContainer}>
-                <Image style={styles.images} source={item.image}/>
+            
+
+            <TouchableOpacity onPress={()=> {
+                navigation.navigate('PlantDetail',{item: item});
+              }}>
+                <View style={styles.itemContainer}>
+                  <View style={styles.imagesContainer}>
+                    <Image style={styles.images} source={item.image}/>
+                  </View>
+                  <View style={styles.itemNameContainer}>
+                    <Text style={styles.itemName}>{item.name}</Text>
+                  </View>
+                  <View style={styles.itemPriceContainer}>
+                        <NumberFormat 
+                              value={item.price} 
+                              displayType={'text'} 
+                              thousandSeparator={true}
+                              fixedDecimalScale={true}
+                              thousandSeparator={'.'} 
+                              decimalSeparator={','}
+                              decimalScale={2} 
+                              prefix={'€'} 
+                              renderText={
+                                  value => <Text style={styles.itemPrice}>{value}</Text>
+                              } 
+                        />
+                  </View>
               </View>
-              <View style={styles.itemNameContainer}>
-                <Text style={styles.itemName}>{item.name}</Text>
-              </View>
-              <View style={styles.itemPriceContainer}>
-                    <NumberFormat 
-                          value={item.price} 
-                          displayType={'text'} 
-                          thousandSeparator={true}
-                          fixedDecimalScale={true}
-                          thousandSeparator={'.'} 
-                          decimalSeparator={','}
-                          decimalScale={2} 
-                          prefix={'€'} 
-                          renderText={
-                              value => <Text style={styles.itemPrice}>{value}</Text>
-                          } 
-                    />
-              </View>
-            </View>
+          </TouchableOpacity>
+            
           )
       }
       render(){
@@ -49,7 +58,8 @@ export default class Plants extends Component {
 const styles = StyleSheet.create({
     container:{
       flex: 1,
-      alignItems: 'center'
+      alignItems: 'center',
+      backgroundColor: "white"
     },
     itemContainer:{
       width:  250,

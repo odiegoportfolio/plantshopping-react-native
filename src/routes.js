@@ -1,9 +1,10 @@
 import * as React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { Text, View } from 'react-native';
+import { Text, View , StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import HomeScreen from './pages/home';
+import Cart from './pages/cart';
 function SettingsScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -20,9 +21,9 @@ export default function Routes() {
     <NavigationContainer>
       <Tab.Navigator
          initialRouteName="Home"
-         activeColor="#f0edf6"
-         inactiveColor="#a2a2a2"
-         barStyle={{ backgroundColor: '#045e17' }}>
+         activeColor="white"
+         inactiveColor="white"
+         barStyle={{ backgroundColor: '#2E8B57' }}>
         
           <Tab.Screen name="Profile" component={SettingsScreen} options={{
                 tabBarIcon: ({ color }) => (
@@ -31,7 +32,7 @@ export default function Routes() {
               }}/>
           <Tab.Screen name="Search" component={SettingsScreen} options={{
               tabBarIcon: ({ color }) => (
-                <Icon style={[{color: color}]} size={27} name={'search-outline'}/>
+                <Icon style={[{color: color}]} size={27} type={'ionicons'} name={'search-outline'}/>
               )
             }}/>
 
@@ -51,7 +52,7 @@ export default function Routes() {
                 )
           }}/>
 
-          <Tab.Screen name="Shopping Cart" component={SettingsScreen} options={{
+          <Tab.Screen name="Cart" component={Cart} options={{
               tabBarIcon: ({ color }) => (
                 <Icon style={[{color: color}]} size={27} name={'cart-outline'}/>
               )
