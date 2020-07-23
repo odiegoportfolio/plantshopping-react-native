@@ -3,8 +3,10 @@ import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity } from "react
 import PlantsService from "../services/plants.service.js";
 import NumberFormat from 'react-number-format';
 import { NavigationContext } from '@react-navigation/native';
+import {connect} from "react-redux";
+import {setPlant} from "../actions/plant";
 
-export default class Plants extends Component {
+class Plants extends Component {
     static contextType = NavigationContext;
     renderItem =({item})=>{
       const navigation = this.context;
@@ -12,7 +14,8 @@ export default class Plants extends Component {
             
 
             <TouchableOpacity onPress={()=> {
-                navigation.navigate('PlantDetail',{item: item});
+                this.props.setPlant(item);
+                navigation.navigate('PlantDetail');
               }}>
                 <View style={styles.itemContainer}>
                   <View style={styles.imagesContainer}>
@@ -103,3 +106,12 @@ const styles = StyleSheet.create({
       fontSize: 20
     },
   });
+
+
+  const mapDispatchToPros = (dispatch) =>{
+    return {
+      setPlant: (plant) => dispatch(setPlant(plant))
+    }
+  }
+
+  export default connect(null, mapDispatchToPros)(Plants);

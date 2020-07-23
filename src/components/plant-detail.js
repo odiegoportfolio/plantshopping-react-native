@@ -1,23 +1,25 @@
-import React  from 'react';
+import React,{Component} from 'react';
 import {View, Text, Image, StyleSheet, TouchableHighlight } from 'react-native';
 import NumberFormat from 'react-number-format';
-//import '../common/global';
-export default function PlantDetail({ route, navigation }){
-    const { item } = route.params;
-    const onPress = () =>{
-      //global.plantsInTheCart.push(item);
-    };
-    return (
+import {connect} from "react-redux";
+import {addItem} from "../actions/cart";
+
+class PlantDetail extends Component {
+    render(){
+      const onPress = () =>{
+        this.props.addItem(this.props.plant);
+      };
+      return (
         <View style={styles.container}>
             <View style={styles.imagesContainer}>
-                 <Image style={styles.images} source={item.image}/>
+                 <Image style={styles.images} source={this.props.plant.image}/>
             </View>
             <View style={styles.itemName}>
-              <Text style={styles.itemName}>{item.name}</Text>  
+              <Text style={styles.itemName}>{this.props.plant.name}</Text>  
             </View>
             <View style={styles.itemPriceContainer}>
               <NumberFormat 
-                    value={item.price} 
+                    value={this.props.plant.price} 
                     displayType={'text'} 
                     thousandSeparator={true}
                     fixedDecimalScale={true}
@@ -30,7 +32,8 @@ export default function PlantDetail({ route, navigation }){
                     }/>
             </View>
             <View style={styles.itemDescriptionContainer}>
-              <Text style={styles.itemDescription}>{item.description}</Text>
+              <Text style={styles.itemDescription}>{this.props.plant.description}</Text>
+              <Text style={styles.itemDescription}>{this.props.cartItems.length}</Text>
             </View>
             <View style={styles.buttonContainer}>
 
@@ -42,6 +45,8 @@ export default function PlantDetail({ route, navigation }){
         </View>
 
     );
+    }
+    
 }
 
 
@@ -111,3 +116,18 @@ const styles = StyleSheet.create({
       fontWeight: "bold"
     }
   });
+
+  const mapStateToPros = (state) =>{
+    return {
+      cartItems: state.cartReducer.cartItems,
+      plant: state.plantReducer.plant
+    }
+  }
+
+  const mapDispatchToPros = (dispatch) =>{
+    return {
+      addItem: (item) => dispatch(addItem(item))
+    }
+  }
+
+  export default connect(mapStateToPros,mapDispatchToPros)(PlantDetail);
