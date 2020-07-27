@@ -1,14 +1,11 @@
 import React,{Component} from 'react';
-import {View, Text, Image, StyleSheet, TouchableHighlight } from 'react-native';
+import {View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import NumberFormat from 'react-number-format';
 import {connect} from "react-redux";
 import {addItem} from "../actions/cart";
 
 class PlantDetail extends Component {
     render(){
-      const onPress = () =>{
-        this.props.addItem(this.props.plant);
-      };
       return (
         <View style={styles.container}>
             <View style={styles.imagesContainer}>
@@ -33,13 +30,12 @@ class PlantDetail extends Component {
             </View>
             <View style={styles.itemDescriptionContainer}>
               <Text style={styles.itemDescription}>{this.props.plant.description}</Text>
-              <Text style={styles.itemDescription}>{this.props.cartItems.length}</Text>
             </View>
             <View style={styles.buttonContainer}>
 
-              <TouchableHighlight  style={styles.button} onPress={onPress}>
+              <TouchableOpacity  style={styles.button} onPress={ () => this.props.addItem(this.props.plant)}>
                   <Text style={styles.textButton}>Add to Cart</Text>
-              </TouchableHighlight >
+              </TouchableOpacity >
             </View>
 
         </View>
